@@ -836,4 +836,7 @@
   <!-- ProtonAOSP snippet -->
   <include name="snippets/proton.xml"/>
 
+  <!-- CAF -->
+  <include name="snippets/caf.xml"/>
+  <include name="snippets/proton-whyred.xml"/>
 </manifest>
