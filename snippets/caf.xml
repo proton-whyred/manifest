@@ -4,12 +4,12 @@
   <remote name="caf_system"
           fetch="https://source.codeaurora.org/quic/la"
           review="codeaurora.org"
-          revision="refs/tags/LA.QSSI.11.0.r1-09900-qssi.0"/>
+          revision="refs/tags/LA.QSSI.11.0.r1-10700-qssi.0"/>
 
   <remote name="caf_vendor"
           fetch="https://source.codeaurora.org/quic/la"
           review="codeaurora.org"
-          revision="refs/tags/LA.UM.9.14.r1-13700-LAHAINA.0"/>
+          revision="refs/tags/LA.UM.9.14.r1-14500-LAHAINA.0"/>
 
   <!-- QSSI -->
   <project name="device/qcom/qssi" path="device/qcom/qssi" remote="caf_system"/>
