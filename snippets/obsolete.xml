@@ -7,7 +7,6 @@
   <remove-project name="device/google/bonito-kernel" />
   <remove-project name="device/google/bonito-sepolicy" />
   <remove-project name="android_device_google_bramble" />
-  <remove-project name="device/google/bramble-kernel" />
   <remove-project name="device/google/bramble-sepolicy" />
   <remove-project name="device/google/coral" />
   <remove-project name="device/google/coral-kernel" />
@@ -15,7 +14,7 @@
   <remove-project name="android_device_google_redbull" />
   <remove-project name="android_device_google_redbull-sepolicy" />
   <remove-project name="android_device_google_redfin" />
-  <remove-project name="device/google/redfin-kernel" />
+  <remove-project name="device/google/redbull-kernel" />
   <remove-project name="device/google/redfin-sepolicy" />
   <remove-project name="android_device_google_sunfish" />
   <remove-project name="device/google/sunfish-kernel" />
