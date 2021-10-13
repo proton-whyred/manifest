@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="caf_system" fetch="https://source.codeaurora.org/quic/la" review="codeaurora.org" revision="refs/tags/LA.QSSI.11.0.r1-10700-qssi.0" />
+  <remote name="caf_vendor" fetch="https://source.codeaurora.org/quic/la" review="codeaurora.org" revision="refs/tags/LA.UM.9.14.r1-14500-LAHAINA.0" />
+  <!-- QSSI -->
+  <project name="device/qcom/qssi" path="device/qcom/qssi" remote="caf_system" />
+  <project name="device/qcom/qssi_32" path="device/qcom/qssi_32" remote="caf_system" />
+  <project name="device/qcom/qssi_32go" path="device/qcom/qssi_32go" remote="caf_system" />
+  <!-- CAF System -->
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" remote="caf_system" />
+  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" remote="caf_system" />
+  <remove-project name="android_vendor_qcom_opensource_core-utils" />
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" remote="caf_system">
+    <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk" />
+    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk" />
+    <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk" />
+    <linkfile dest="vendor/qcom/build/tasks/generate_vendor_bundle.mk" src="image_generation_tool/generate_vendor_bundle.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/image_generation_tool_product.mk" src="image_generation_tool/config/image_generation_tool_product.mk" />
+    <linkfile dest="kernel/Android.mk" src="build/stop_scan.mk" />
+    <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk" />
+  </project>
+  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="caf_system" />
+  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" remote="caf_system" />
+  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" remote="caf_system" />
+  <project name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/commonsys-intf/wfd" remote="caf_system" />
+  <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" remote="caf_system" />
+  <!-- CAF Vendor -->
+  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" remote="caf_vendor" />
+  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" remote="caf_vendor" />
+  <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" remote="caf_vendor">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk" />
+  </project>
+  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" remote="caf_vendor" />
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" remote="caf_vendor" />
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" remote="caf_vendor" />
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" remote="caf_vendor" />
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" remote="caf_vendor" />
+  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" remote="caf_vendor" />
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" remote="caf_vendor" />
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" remote="caf_vendor" />
+</manifest>

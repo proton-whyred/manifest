@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Unnecessary Stuff -->
+  <remove-project name="device/google/atv" />
+  <remove-project name="device/google/bonito" />
+  <remove-project name="device/google/bonito-kernel" />
+  <remove-project name="device/google/bonito-sepolicy" />
+  <remove-project name="device/google/bramble-sepolicy" />
+  <remove-project name="device/google/coral-kernel" />
+  <remove-project name="device/google/redbull-kernel" />
+  <remove-project name="device/google/redfin-sepolicy" />
+  <remove-project name="device/google/sunfish-kernel" />
+  <remove-project name="device/google/sunfish-sepolicy" />
+  <remove-project name="device/google/crosshatch" />
+  <remove-project name="device/google/crosshatch-kernel" />
+  <remove-project name="device/google/crosshatch-sepolicy" />
+  <remove-project name="device/google/fuchsia" />
+  <remove-project name="device/google/trout" />
+  <remove-project name="device/google_car" />
+  <remove-project name="device/mediatek/wembley-sepolicy" />
+  <remove-project name="device/ti/beagle-x15" />
+  <remove-project name="device/ti/beagle-x15-kernel" />
+  <remove-project name="device/amlogic/yukawa" />
+  <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="platform/hardware/broadcom/libbt" />
+  <remove-project name="platform/hardware/broadcom/wlan" />
+  <remove-project name="platform/hardware/invensense" />
+  <remove-project name="platform/hardware/knowles/athletico/sound_trigger_hal" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/bootctrl" />
+  <remove-project name="platform/hardware/qcom/bt" />
+  <remove-project name="platform/hardware/qcom/camera" />
+  <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/keymaster" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/qcom/msm8960" />
+  <remove-project name="platform/hardware/qcom/msm8994" />
+  <remove-project name="platform/hardware/qcom/msm8996" />
+  <remove-project name="platform/hardware/qcom/msm8x09" />
+  <remove-project name="platform/hardware/qcom/msm8x26" />
+  <remove-project name="platform/hardware/qcom/msm8x27" />
+  <remove-project name="platform/hardware/qcom/msm8x84" />
+  <remove-project name="platform/hardware/qcom/power" />
+  <remove-project name="platform/hardware/qcom/sdm845/bt" />
+  <remove-project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" />
+  <remove-project name="platform/hardware/qcom/sdm845/display" />
+  <remove-project name="platform/hardware/qcom/sdm845/gps" />
+  <remove-project name="platform/hardware/qcom/sdm845/media" />
+  <remove-project name="platform/hardware/qcom/sdm845/thermal" />
+  <remove-project name="platform/hardware/qcom/sdm845/vr" />
+  <remove-project name="platform/hardware/qcom/sm7150/gps" />
+  <remove-project name="platform/hardware/qcom/sm7250/gps" />
+  <remove-project name="platform/hardware/qcom/sm8150/gps" />
+  <remove-project name="platform/hardware/qcom/sm8150/thermal" />
+  <remove-project name="platform/hardware/qcom/sm8150/vr" />
+  <remove-project name="platform/hardware/qcom/sm8150p/gps" />
+  <remove-project name="platform/external/tinycompress" />
+  <project name="platform/external/tinycompress" path="external/tinycompress" remote="caf_system" />
+  <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
+  <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="proton-whyred/android_vendor_qcom-opensource_cryptfs_hw" remote="github" revision="rvc" />
+  <remove-project name="platform/hardware/qcom/thermal" />
+  <project path="vendor/qcom/opensource/thermal-hal" name="proton-whyred/android_hardware_qcom_thermal" remote="github" revision="rvc" />
+  <project name="proton-whyred/android_kernel_build" path="device/qcom/kernelscripts" remote="github" revision="rvc">
+    <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk" />
+  </project>
+  <project path="vendor/qcom/opensource/commonsys/fm" name="proton-whyred/android_vendor_qcom-opensource_fm-commonsys" remote="github" revision="rvc" />
+  <remove-project name="android_vendor_qcom_opensource_interfaces" />
+  <project path="vendor/qcom/opensource/interfaces" name="proton-whyred/android_vendor_qcom-opensource_interfaces" remote="github" revision="rvc" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="proton-whyred/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github-ssh" revision="sc" />
+  <project path="vendor/qcom/opensource/dataservices" name="proton-whyred/android_vendor_qcom_opensource_dataservices" remote="github-ssh" revision="sc" />
+  <project path="vendor/codeaurora/commonsys/telephony" name="proton-whyred/android_vendor_codeaurora_telephony" remote="github-ssh" revision="sc" />
+</manifest>

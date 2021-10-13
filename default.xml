@@ -1094,4 +1094,7 @@
 
   <!-- ProtonAOSP changes -->
   <include name="proton.xml"/>
+  <!-- whyred  -->
+  <include name="caf.xml"/>
+  <include name="proton-whyred.xml"/>
 </manifest>
